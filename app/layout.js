@@ -5,7 +5,7 @@ const poppins = Poppins({ subsets: ["latin"] , weight: ['300', '600', '900'] });
 
 export const metadata = {
   title: "My Portfolio - Delivering Solutions",
-  description: "Hi, my name is Earlycode and I am a web developer",
+  description: "Hi, my name is T.B.Baruch and I am a web developer",
   favicon: "/logo.png"
 };
 // TODO: Check favicon

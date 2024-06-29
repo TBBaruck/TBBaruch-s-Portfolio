@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 export const metadata = {
-    title: "Create New Project - EarlyCode",
+    title: "Create New Project - TBaruch",
     description: "Here I Set up my Projects"
 }
 

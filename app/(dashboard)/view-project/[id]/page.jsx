@@ -7,6 +7,10 @@ import Link from "next/link";
 
 import "../../../../styles/ckeditor.css";
 
+export const metadata = {
+  title: "view project - TBaruch",
+  description: "Here I Set up my Projects"
+}
 const page = async ({ params }) => {
   const { id } = params;
 

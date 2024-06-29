@@ -28,7 +28,7 @@ const DashboardNav = () => {
           height={900}
           className="w-12"
         />
-        <span className="font-bold text-2xl italic">Earlycode</span>
+        <span className="font-bold text-2xl italic">TBaruch</span>
       </Link>
 
       <div className="ml-auto"></div>

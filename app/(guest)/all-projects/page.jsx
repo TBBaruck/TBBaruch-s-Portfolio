@@ -2,7 +2,7 @@ import AllProjects from '@/components/AllProjects';
 import React from 'react'
 
 export const metadata = {
-    title: "My Projects - EarlyCode",
+    title: "My Projects - TBaruch",
     description: "Here I Set up my Projects"
 }
 
