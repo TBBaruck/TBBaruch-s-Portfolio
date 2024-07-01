@@ -15,6 +15,8 @@ const page = async () => {
     if (session === null) {
         redirect('/signin')
     }
+    console.log(session)
+    console.log(session?.user);
   return (
     <main className='py-10 bg-gray-50 px-3 lg:px-10'>
         <section >

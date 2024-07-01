@@ -30,19 +30,19 @@ const HomePage = async () => {
     <main>
       <div className="bg-black h-[32rem] flex items-center gap-5 justify-center hero">
         <div className="w-full pl-10 leading-8">
-          <p className="font-semibold">Get The Best Web Solutions</p>
+          <p className="font-bold text-2xl text-white">Get The Best Web Solutions</p>
 
-          <p className="text-5xl font-bold">Hi, I'm T.B. Baruch</p>
+          <p className="text-5xl font-bold my-4 text-orange-600">Hi, I'm T.B. Baruch</p>
 
-          <p className="font-semibold">
-            I am a full stack web developer, delivering web solutions using
+          <p className="font-bold">
+            I am a Full Stack Web Developer, delivering web solutions using
             HTML, CSS, JS, React and Next.Js
           </p>
         </div>
 
         <div className="h-full w-full">
           <Image
-            src={"/user.png"}
+            src={"/3d programmer.png"}
             alt="User"
             width={1800}
             height={900}

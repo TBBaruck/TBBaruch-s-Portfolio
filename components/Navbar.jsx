@@ -78,7 +78,7 @@ const Navbar = () => {
       </ul>
 
       <Link
-        href={"#"}
+        href={"/contact"}
         className="bg-orange-600 text-white py-1 px-5 hidden lg:inline-block lg:ml-5"
       >
         Get a Quote
@@ -94,7 +94,7 @@ const Navbar = () => {
           Sign In
         </Link>
       ) : (
-        <DropdownMenu className="mx-4">
+        <DropdownMenu className="max-lg:ml-8">
           <DropdownMenuTrigger className="outline-none">
           <Avatar className="mx-5">
               <AvatarImage src={session.user.image} />
