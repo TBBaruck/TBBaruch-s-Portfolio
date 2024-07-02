@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { usePathname } from 'next/navigation';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -17,6 +18,8 @@ import {
 
 const Navbar = () => {
   const { data: session, status } = useSession();
+  const pathname = usePathname(); // Get the current path
+
 
   const menuList = [
     {
@@ -69,7 +72,7 @@ const Navbar = () => {
           <li key={link.id}>
             <Link
               href={link.url}
-              className="font-semibold hover:text-orange-400"
+              className={`font-semibold hover:text-orange-400 ${pathname === link.url ? 'text-orange-600' : 'text-black'}`}
             >
               {link.title}
             </Link>
@@ -77,6 +80,7 @@ const Navbar = () => {
         ))}
       </ul>
 
+      {/*  */}
       <Link
         href={"/contact"}
         className="bg-orange-600 text-white py-1 px-5 hidden lg:inline-block lg:ml-5"
@@ -89,7 +93,7 @@ const Navbar = () => {
       ) : status == "unauthenticated" ? (
         <Link
           href={"/signin"}
-          className="bg-orange-600 text-white py-1 px-5 hidden lg:inline-block lg:ml-5"
+          className="bg-orange-600 max-lg:text-sm text-white py-1 px-4 max-lg:ml-20  lg:inline-block lg:ml-5"
         >
           Sign In
         </Link>
